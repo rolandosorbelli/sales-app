@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Books from "./Books"
 
 class Sales extends Component {
 	
@@ -34,32 +35,5 @@ class Sales extends Component {
   }
 }
 
-class Books extends Component {
-
-	clicker(){
-		var active = !this.state.active
-		this.setState({active: active})
-		this.props.sumPrice(active ? this.props.price : -this.props.price)
-	}
-
-	constructor(props){
-		super(props);
-	
-		this.state = {
-			active: false
-		}
-		this.clicker = this.clicker.bind(this)
-	}
-
-
-  render() {
-  	console.log(this.state)
-    return (
-      <div>
-        <p onClick={this.clicker}>{this.props.title}, {this.props.author}: <b>£{this.props.price}</b></p>
-      </div>
-    );
-  }
-}
 
 export default Sales;
