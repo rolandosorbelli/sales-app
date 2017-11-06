@@ -26,3 +26,57 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+h1{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+#books{
+    list-style: none;
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+}
+
+#books p{
+    display: block;
+    padding: 20px 20px;
+    background-color: #c30101;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#books p b{
+    position: absolute;
+    right: 30px;
+    width: 100px;
+    color: #000;
+    text-align: right;
+}
+
+#books p:hover{
+    background-color:#6f0000;
+    color:#fff;
+}
+
+#books p.active{
+    color:#fff;
+}
+
+#books p.active b{
+    color: #fff;
+}
+
+
+#total{
+    background: #560d0d !important;
+    cursor: default !important;
+    display: block;
+    padding: 20px 20px;
+    text-align: right;
+    color: #fff;
+}

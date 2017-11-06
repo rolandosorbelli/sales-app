@@ -27,7 +27,7 @@ class Sales extends Component {
         <h1>Buy your favourite books</h1>
         <div id="books">
         	{books}
-        	<p id="total">Total: <b>{this.state.total}</b></p>
+        	<div id="total">Total: <b>£{this.state.total}</b></div>
         </div>
       </div>
     );
@@ -56,7 +56,7 @@ class Books extends Component {
   	console.log(this.state)
     return (
       <div>
-        <p onClick={this.clicker}>{this.props.title}, {this.props.author}: £<b>{this.props.price}</b></p>
+        <p onClick={this.clicker}>{this.props.title}, {this.props.author}: <b>£{this.props.price}</b></p>
       </div>
     );
   }
