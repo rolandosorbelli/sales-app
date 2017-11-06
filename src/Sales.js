@@ -37,7 +37,9 @@ class Sales extends Component {
 class Books extends Component {
 
 	clicker(){
-		var active = this.state.active == true
+		var active = !this.state.active
+		this.setState({active: active})
+		this.props.sumPrice(active ? this.props.price : -this.props.price)
 	}
 
 	constructor(props){
@@ -51,6 +53,7 @@ class Books extends Component {
 
 
   render() {
+  	console.log(this.state)
     return (
       <div>
         <p onClick={this.clicker}>{this.props.title}, {this.props.author}: £<b>{this.props.price}</b></p>

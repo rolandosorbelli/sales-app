@@ -6,10 +6,10 @@ class App extends Component {
   render() {
 
     var books = [
-      { title: "A Little Life", author: "Hanya Yanagihara", price: 8.99},
-      { title: "The Power", author: "Naomi Alderman", price: 9.99},
-      { title: "Homo Deus", author: "Yuval Noah Harari", price: 12.99},
-      { title: "Norse Mythology", author: "Neil Gaiman", price: 18.99},
+      { title: "A Little Life", author: "Hanya Yanagihara", price: 8},
+      { title: "The Power", author: "Naomi Alderman", price: 9},
+      { title: "Homo Deus", author: "Yuval Noah Harari", price: 12},
+      { title: "Norse Mythology", author: "Neil Gaiman", price: 18},
     ];
 
     return (
